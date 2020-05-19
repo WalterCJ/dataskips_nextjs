@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "../assets/image.svg";
+import Logo from "../assets/logo.svg";
+
 export default function Sidebar() {
   return (
     <div className="justify-center p-12 md:p-5 md:w-7/12 bg-white">
@@ -7,8 +9,12 @@ export default function Sidebar() {
         <Image />
       </div>
       <div className="flex items-center md:justify-center mt-4">
-        LOGO
-        <span className="appname">DataSkips</span>
+        <span className="h-10 w-10 md:h-8 md:w-8">
+          <Logo />
+        </span>
+        <span className="font-bold text-2xl md:text-2xl lg:text-3xl text-red-500 pl-4">
+          DataSkips
+        </span>
       </div>
       <div className="pl-0">
         <h1 className="font-light text-lg mt-6 md:text-center">
